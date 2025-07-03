@@ -8,7 +8,7 @@ const inter = Inter({
 })
 
 export const metadata = {
-  title: 'Biccas',
+  title: 'Biccas - Improve Your Productivity',
   description: 'SASS Landing Page'
 }
 

@@ -55,7 +55,7 @@ const Billing = () => {
               key={i}
               className={`
                 flex-center flex-col gap-4 px-4 py-4 shadow-lg rounded-xl shadow-neutral-300
-                ${isPopular ? 'accent-bg min-h-[70vh] transform scale-[1.03] relative z-10' : 'bg-white min-h-[60vh]'}
+                ${isPopular ? 'accent-bg min-h-[70vh] transform md:scale-[1.03] relative z-10' : 'bg-white min-h-[60vh]'}
                 transition-all duration-300
               `}
             >
