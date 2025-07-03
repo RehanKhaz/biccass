@@ -1,26 +1,62 @@
 @import "tailwindcss";
 
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --accent-color: #54BD95
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+  user-select: none;
+}
+
+@utility flex-center {
+  @apply flex items-center justify-center
+}
+
+@utility flex-between {
+  @apply flex items-center justify-between
+}
+
+@utility accent-color {
+  color: var(--accent-color)
+}
+
+@utility accent-bg {
+  background: var(--accent-color)
+}
+
+@layer base {
+  h2 {
+    @apply text-[50px] max-md:text-[40px] max-sm:text-[36px] overflow-hidden leading-[50px] text-[#191A15] font-bold
+  }
+
+  h4 {
+    @apply text-[28px] text-[#191A15] font-bold overflow-hidden
+  }
+
+  p {
+    @apply text-[16px] leading-[30px] text-[#A6A6A6] font-medium
+  }
+
+  button {
+    @apply px-4 py-2 max-md:px-2.5 max-md:py-1.5 text-[16px] font-medium cursor-pointer
+  }
+}
+
+@utility common-padding {
+  @apply px-[4em] max-lg:px-[3em] max-md:px-[1.5em]
+}
+
+.curly-underline {
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: var(--accent-color);
+  text-decoration-thickness: 2px;
 }
