@@ -27,7 +27,7 @@ const Hero = () => {
           <button className='accent-bg text-white rounded-3xl px-8 py-4 h-fit '>
             Try Free Trial
           </button>
-          <div className='flex-center gap-4 max-md:gap-2'>
+          <div className='flex-center gap-4 max-md:gap-32'>
             <PlayCircle size={20} />
             <p className='text-black '>View Demo</p>
           </div>

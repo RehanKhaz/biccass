@@ -57,14 +57,15 @@ const Process = () => {
         </div>
       </div>
 
-<br className='md:hidden' />
+      <br className='md:hidden' />
       {/* Process Formula */}
       <div className='w-[45%] max-md:w-full flex justify-center flex-col gap-3 '>
         {process.map((p, i) => {
           const { title, description, image } = p
           return (
-            <div key={i}
-              className='flex gap-5 
+            <div
+              key={i}
+              className='flex max-md:flex-col max-md:gap-3 gap-5 
                 '
             >
               <div className='flex-center px-4 py-3 h-fit w-fit bg-white shadow-gray-400'>
