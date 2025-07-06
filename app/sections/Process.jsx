@@ -65,7 +65,7 @@ const Process = () => {
           return (
             <div
               key={i}
-              className='flex max-md:flex-col max-md:gap-3 gap-5 
+              className='md:flex max-md:flex-center max-md:flex-col max-md:gap-2 gap-5 
                 '
             >
               <div className='flex-center px-4 py-3 h-fit w-fit bg-white shadow-gray-400'>

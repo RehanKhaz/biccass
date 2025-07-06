@@ -7,7 +7,7 @@ import CountUp from 'react-countup'
 const Billing = () => {
   const [isYearly, setIsYearly] = useState(true)
   return (
-    <section className='common-padding space-y-5 my-[3em]'>
+    <section id='#pricing' className='common-padding space-y-5 my-[3em]'>
       <h2 className='text-center'>
         Choose Plan <br />
         That's Right For You
